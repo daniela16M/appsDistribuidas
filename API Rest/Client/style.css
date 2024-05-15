@@ -1,0 +1,88 @@
+html,
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #181818;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+form {
+  flex-direction: column;
+  width: 40%;
+  gap: 1rem;
+}
+
+form input[type="submit"] {
+  background-color: #2b5eec;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+table {
+  width: 80%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+tr {
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+td > button {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+td > button:first-of-type {
+  background-color: #2b5eec;
+  color: #fff;
+}
+
+td > button:last-of-type {
+  background-color: #ec2b2b;
+  color: #fff;
+}
+
+input {
+  outline: none;
+  padding: 0.5rem 1rem;
+}
